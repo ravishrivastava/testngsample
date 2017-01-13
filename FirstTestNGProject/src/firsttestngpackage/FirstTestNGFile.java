@@ -1,0 +1,35 @@
+package firsttestngpackage;
+
+import org.apache.commons.lang3.ObjectUtils.Null;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.*;
+
+
+public class FirstTestNGFile {
+ 
+  public String baseUrl = "http://newtours.demoaut.com/";
+ 
+  public WebDriver driver = null;
+  
+  @BeforeTest
+  private void setDriver() {
+	System.setProperty("webdriver.gecko.driver","/home/ravi/geckodriver");
+    driver = new  FirefoxDriver();
+  }
+  
+  @AfterTest
+  private void terminateBrowser() {
+	  driver.quit();
+  }
+  
+  @Test
+  public void verifyHomePageTitle() {
+	  driver.get(baseUrl);
+	  String expectedTitle = 	"Welcome: Mercury Tours";
+	  String actualTitle = driver.getTitle();
+	  Assert.assertEquals(actualTitle, expectedTitle);
+	
+  }
+}

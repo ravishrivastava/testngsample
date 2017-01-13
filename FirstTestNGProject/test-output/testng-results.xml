@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7276" started-at="2017-01-13T13:06:52Z" finished-at="2017-01-13T13:06:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="7276" started-at="2017-01-13T13:06:52Z" finished-at="2017-01-13T13:06:59Z">
+      <class name="firsttestngpackage.FirstTestNGFile">
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:firsttestngpackage.FirstTestNGFile@6f7fd0e6]" name="setDriver" is-config="true" duration-ms="4626" started-at="2017-01-13T18:36:52Z" finished-at="2017-01-13T18:36:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:0, instance:firsttestngpackage.FirstTestNGFile@6f7fd0e6]" name="verifyHomePageTitle" duration-ms="2371" started-at="2017-01-13T18:36:56Z" finished-at="2017-01-13T18:36:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:firsttestngpackage.FirstTestNGFile@6f7fd0e6]" name="terminateBrowser" is-config="true" duration-ms="256" started-at="2017-01-13T18:36:59Z" finished-at="2017-01-13T18:36:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+      </class> <!-- firsttestngpackage.FirstTestNGFile -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

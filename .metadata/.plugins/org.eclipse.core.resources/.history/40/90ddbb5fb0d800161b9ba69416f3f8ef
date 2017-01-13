@@ -1,0 +1,37 @@
+package newpackage;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class WinTest {
+
+    public static void main(String[] args) {
+    	System.setProperty("webdriver.gecko.driver","/home/ravi/geckodriver");
+        WebDriver driver = new FirefoxDriver();
+// lesson 1
+//        driver.get("http://www.popuptest.com/popuptest2.html");
+//        driver.quit();  // using QUIT all windows will close
+
+     //  lesson 2
+//        driver.get("http://demo.guru99.com/selenium/deprecated.html");
+//        driver.switchTo().frame("classFrame");
+//        driver.findElement(By.linkText("Deprecated")).clear();
+        
+//        lesson 3
+        driver.get("http://jsbin.com/usidix/1");
+        driver.findElement(By.cssSelector("input[value=\"Go!\"]")).click();
+        driver.switchTo().alert("classFrame");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        driver.quit();        
+        
+    }
+}
